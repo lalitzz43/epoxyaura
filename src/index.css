@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #f8f5ec;
+  --color-paper: #efeadc;
+  --color-gold: #936b30;
+  --color-ink: #20251e;
+  --color-forest: #172b24;
+
+  --font-sans: "DM Sans", sans-serif;
+  --font-display: "Cormorant Garamond", serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 4px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.product-card {
+  box-shadow: 0 4px 20px #172b2405;
+  transition: transform 240ms ease, box-shadow 240ms ease, border-color 240ms ease;
+}
+
+@media (hover: hover) {
+  .product-card:hover {
+    transform: translateY(-5px);
+    border-color: #936b3055;
+    box-shadow: 0 18px 40px #172b2412;
+  }
+}
+
+dialog::backdrop {
+  backdrop-filter: blur(5px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+button,
+a,
+input,
+textarea,
+select {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button,
+select {
+  cursor: pointer;
+}
+
+a,
+button,
+input,
+textarea,
+select {
+  outline-offset: 5px;
+}
+
+button,
+a {
+  transition: all 180ms ease;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+::selection {
+  background: #d9bd86;
+  color: #172b24;
+}
+
+@layer components {
+  .container-shell {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-12;
+  }
+
+  .section-label {
+    @apply text-xs font-semibold uppercase tracking-[0.25em] text-gold;
+  }
+
+  .section-title {
+    @apply font-display text-4xl leading-[1.08] tracking-[-0.025em] text-forest md:text-6xl;
+  }
+
+  .button-gold {
+    @apply inline-flex items-center justify-center gap-3 rounded-full
+    bg-gold px-6 py-3 text-sm font-medium text-white
+    hover:bg-[#775321];
+    box-shadow: 0 5px 15px #936b3020;
+    background-image: linear-gradient(125deg, #b48b49, #936b30 70%);
+    transition: transform 180ms ease, box-shadow 180ms ease;
+    min-height: 46px;
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px #936b3030;
+    }
+  }
+
+  .button-outline {
+    @apply inline-flex items-center justify-center gap-3 rounded-full
+    border border-gold px-6 py-3 text-sm font-medium text-gold
+    hover:bg-gold hover:text-white;
+  }
+
+  .field {
+    @apply w-full rounded-xl border border-gold/25 bg-white/70
+    px-4 py-3 text-sm focus:border-gold focus:outline-none
+    focus:ring-2 focus:ring-gold/20;
+    min-height: 48px;
+    transition: border-color 180ms ease, box-shadow 180ms ease;
+  }
+}
