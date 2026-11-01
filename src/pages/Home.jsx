@@ -22,6 +22,7 @@ export default function Home({ onSelect }) {
         <Link to="/collection" className="block focus-visible:outline-2 focus-visible:outline-gold focus-visible:-outline-offset-4">
           <ResponsiveBanner
             src={images.hero}
+            className="block h-[clamp(200px,45vw,300px)] w-full object-fill md:h-auto"
             alt="EPOXYAURA ? Artistry in Every Curve. Handcrafted resin tables and art pieces. Explore the Forest River Table collection."
             eager
             width={2560}
