@@ -5,6 +5,7 @@ import ProductCard from '../components/ProductCard'
 import ProductGrid from '../components/ProductGrid'
 import AboutSection from '../components/AboutSection'
 import FeatureIcon from '../components/FeatureIcon'
+import ResponsiveBanner from '../components/ResponsiveBanner'
 
 export default function Home({ onSelect }) {
   const features = [
@@ -19,13 +20,12 @@ export default function Home({ onSelect }) {
       <section aria-label="EPOXYAURA handcrafted resin art and furniture">
         <h1 className="sr-only">EPOXYAURA ? Artistry in Every Curve.</h1>
         <Link to="/collection" className="block focus-visible:outline-2 focus-visible:outline-gold focus-visible:-outline-offset-4">
-          <img
+          <ResponsiveBanner
             src={images.hero}
             alt="EPOXYAURA ? Artistry in Every Curve. Handcrafted resin tables and art pieces. Explore the Forest River Table collection."
-            fetchPriority="high"
+            eager
             width={2560}
             height={853}
-            className="block h-auto w-full"
           />
         </Link>
       </section>

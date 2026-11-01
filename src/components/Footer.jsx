@@ -1,17 +1,16 @@
 import { Link } from 'react-router'
 import { BRAND_EMAIL, navigation } from '../data/siteData'
 import Logo from './Logo'
+import ResponsiveBanner from './ResponsiveBanner'
 
 export default function Footer() {
   return (
     <>
-      <img
+      <ResponsiveBanner
         src="/images/footer2.jpeg"
         alt="About EpoxyAura: More Than Just Tables. It's a Feeling. Handcrafted with love."
-        className="block h-auto w-full"
         width="3072"
         height="600"
-        loading="lazy"
       />
       <div className="aspect-[4096/356] overflow-hidden bg-[#0b1008]">
         <img
