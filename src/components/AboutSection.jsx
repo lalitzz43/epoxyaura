@@ -19,7 +19,7 @@ export default function AboutSection({ full = false }) {
       </div>
 
       <div className="flex flex-col justify-center px-7 py-14 md:px-14 lg:py-20">
-        <p className="section-label mb-4">About Epoxyaura</p>
+        <p className="section-label mb-4">About EPOXYAURA</p>
         <h2 className="section-title">
           More Than Just Tables.
           <br />

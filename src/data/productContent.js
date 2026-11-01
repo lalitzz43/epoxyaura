@@ -1,7 +1,7 @@
 export const sunlightSuitability = 'Not recommended for direct sunlight exposure.'
 
 const common = {
-  Brand: 'EpoxyAura',
+  Brand: 'EPOXYAURA',
   'Table Shape': 'Round',
   'Table Size': '18 inches (Diameter: 18 inches)',
   Height: '18 inches',
@@ -19,10 +19,10 @@ const content = {
     standaloneSpecifications: true,
     title: 'Royal Blossom – Epoxy Resin Table',
     paragraphs: [
-      'Bring nature and elegance together with Royal Blossom by EpoxyAura. Beautifully handcrafted with real dried flowers, colourful floral details and golden accents, this unique table adds a touch of luxury to any space. Its glossy finish and elegant design make it perfect for homes, offices, hotels, restaurants and cafés. More than a table, it is a timeless piece of art that makes every space special.',
+      'Bring nature and elegance together with Royal Blossom by EPOXYAURA. Beautifully handcrafted with real dried flowers, colourful floral details and golden accents, this unique table adds a touch of luxury to any space. Its glossy finish and elegant design make it perfect for homes, offices, hotels, restaurants and cafés. More than a table, it is a timeless piece of art that makes every space special.',
     ],
     specs: {
-      Brand: 'EpoxyAura',
+      Brand: 'EPOXYAURA',
       Material: 'Epoxy Resin',
       'Table Shape': 'Round',
       'Table Size': '18 inches (Diameter: 18 inches)',
@@ -42,11 +42,11 @@ const content = {
     standaloneSpecifications: true,
     title: 'Forest River – Epoxy Resin Table',
     paragraphs: [
-      'Bring the beauty of nature into your space with Forest River by EpoxyAura. Inspired by the peaceful flow of a river through a forest, this handcrafted table blends natural wood tones with stunning blue-green epoxy resin and elegant white accents. Its unique river-inspired design, premium finish and elegant wooden legs create a perfect balance of nature and modern luxury.',
+      'Bring the beauty of nature into your space with Forest River by EPOXYAURA. Inspired by the peaceful flow of a river through a forest, this handcrafted table blends natural wood tones with stunning blue-green epoxy resin and elegant white accents. Its unique river-inspired design, premium finish and elegant wooden legs create a perfect balance of nature and modern luxury.',
       'More than just a table, Forest River is a statement piece that adds a touch of nature, elegance and luxury to any space. Perfect for homes, offices, hotels, restaurants, cafés and stylish interiors, it transforms ordinary spaces into something truly special with its distinctive handcrafted beauty.',
     ],
     specs: {
-      Brand: 'EpoxyAura',
+      Brand: 'EPOXYAURA',
       'Product Name': 'Forest River Epoxy Table',
       Material: 'Epoxy Resin and Natural Wood',
       'Table Shape': 'Round',
@@ -68,11 +68,11 @@ const content = {
     standaloneSpecifications: true,
     title: 'Golden Fusion - Epoxy Table',
     paragraphs: [
-      'Bring bold artistry and timeless luxury into your space with Golden Fusion by EpoxyAura. This handcrafted masterpiece features a stunning fusion of vibrant blue, radiant yellow, rich red, deep black and elegant white waves, beautifully framed by a golden border. Its glossy epoxy resin tabletop creates a captivating flow of colours, making every detail stand out with a premium finish.',
+      'Bring bold artistry and timeless luxury into your space with Golden Fusion by EPOXYAURA. This handcrafted masterpiece features a stunning fusion of vibrant blue, radiant yellow, rich red, deep black and elegant white waves, beautifully framed by a golden border. Its glossy epoxy resin tabletop creates a captivating flow of colours, making every detail stand out with a premium finish.',
       'Paired with elegant wooden legs, Golden Fusion blends artistic creativity with modern sophistication. More than just a table, it is a statement of style that adds colour, elegance and a luxurious touch to homes, offices, hotels, restaurants and stylish interiors.',
     ],
     specs: {
-      Brand: 'EpoxyAura',
+      Brand: 'EPOXYAURA',
       'Product Name': 'Golden Fusion Epoxy Table',
       'Tabletop Material': 'Epoxy Resin',
       'Leg Material': 'Wood',
@@ -123,11 +123,11 @@ const content = {
     standaloneSpecifications: true,
     title: 'Galaxy Flow – Epoxy Table',
     paragraphs: [
-      'Bring vibrant colours and artistic beauty into your space with Galaxy Flow by EpoxyAura. This handcrafted table features a stunning blend of deep blue, turquoise, vibrant green, red, white and black, creating a mesmerising flowing pattern. Its intricate colour combinations and premium glossy finish give it a bold, modern and elegant look.',
+      'Bring vibrant colours and artistic beauty into your space with Galaxy Flow by EPOXYAURA. This handcrafted table features a stunning blend of deep blue, turquoise, vibrant green, red, white and black, creating a mesmerising flowing pattern. Its intricate colour combinations and premium glossy finish give it a bold, modern and elegant look.',
       'Supported by elegant wooden legs, Galaxy Flow beautifully combines creativity with contemporary style. More than just a table, it is a statement piece that adds colour, character and a touch of luxury to homes, offices, hotels, restaurants and stylish interiors.',
     ],
     specs: {
-      Brand: 'EpoxyAura',
+      Brand: 'EPOXYAURA',
       'Product Name': 'Galaxy Flow Epoxy Table',
       'Tabletop Material': 'Epoxy Resin and High-Quality MDF',
       'Leg Material': 'Wood',
@@ -150,11 +150,11 @@ const content = {
     standaloneSpecifications: true,
     title: 'Lava Flow – Epoxy Table',
     paragraphs: [
-      'Bring vibrant colours and artistic energy into your space with Lava Flow by EpoxyAura. Inspired by the flowing movement of molten lava, this handcrafted table features a striking blend of fiery red, bright orange, soft pink, crisp white and refreshing green. Its fluid patterns and premium glossy finish create a bold, eye-catching look that beautifully combines creativity with modern elegance.',
+      'Bring vibrant colours and artistic energy into your space with Lava Flow by EPOXYAURA. Inspired by the flowing movement of molten lava, this handcrafted table features a striking blend of fiery red, bright orange, soft pink, crisp white and refreshing green. Its fluid patterns and premium glossy finish create a bold, eye-catching look that beautifully combines creativity with modern elegance.',
       'Complemented by elegant wooden legs, Lava Flow adds warmth, colour and character to any interior. More than just a table, it is a unique statement piece designed to elevate homes, offices, hotels, restaurants and stylish spaces.',
     ],
     specs: {
-      Brand: 'EpoxyAura',
+      Brand: 'EPOXYAURA',
       'Product Name': 'Lava Flow Epoxy Table',
       'Tabletop Material': 'Epoxy Resin and High-Quality MDF Board',
       'Leg Material': 'Wood',

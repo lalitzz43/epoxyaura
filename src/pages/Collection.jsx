@@ -23,7 +23,7 @@ export default function Collection({ newOnly = false, onSelect }) {
   return (
     <section className="container-shell min-h-[65vh] py-16">
       <SectionHeading
-        label={newOnly ? 'Discover Something New' : 'The Epoxyaura Collection'}
+        label={newOnly ? 'Discover Something New' : 'The EPOXYAURA Collection'}
         title={newOnly ? 'New Arrivals' : 'Art for Your Everyday'}
         text="Find a piece that feels at home in your space."
       />

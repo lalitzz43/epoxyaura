@@ -51,11 +51,23 @@ img {
   }
 }
 
+.about-reveal-ready {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 650ms ease, transform 650ms ease;
+}
+
+.about-reveal-ready.about-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 dialog::backdrop {
   backdrop-filter: blur(5px);
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .about-reveal-ready { opacity: 1; transform: none; }
   html { scroll-behavior: auto; }
   *, *::before, *::after {
     animation-duration: 0.01ms !important;

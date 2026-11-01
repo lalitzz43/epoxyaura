@@ -45,7 +45,7 @@ export default function ProductDetails({ product, onClose }) {
 
         <div className="min-h-0 min-w-0 p-6 md:overflow-y-auto md:p-8 md:pt-16">
           {product.name !== 'Royal Blossom' && <p className="section-label">{product.category} Collection</p>}
-          <h2 id="product-title" className={`mt-4 font-display text-4xl ${product.headingCase === 'normal' ? '' : 'uppercase'}`}>
+          <h2 id="product-title" className="mt-4 font-display text-4xl">
             {details?.title || product.name}
           </h2>
           {product.colors && <p className="mt-2 text-sm text-ink/60">{product.colors}</p>}
@@ -54,9 +54,9 @@ export default function ProductDetails({ product, onClose }) {
           </p>
           <div className="mt-5 space-y-4 text-sm leading-7 text-ink/70">
             {(details?.paragraphs || [product.description]).map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
-            <p className="font-display text-lg italic text-gold">{details?.tagline || 'EpoxyAura – Where Resin Meets Elegance.'}</p>
+            <p className="font-display text-lg italic text-gold">{details?.tagline || 'EPOXYAURA – Where Resin Meets Elegance.'}</p>
           </div>
-          <h3 className={`mt-7 font-display text-2xl ${product.headingCase === 'normal' ? '' : 'uppercase'}`}>{details?.specificationHeading || 'Product Specifications'}</h3>
+          <h3 className="mt-7 font-display text-2xl">{details?.specificationHeading || 'Product Specifications'}</h3>
           <dl className="mt-3 divide-y divide-gold/15 text-sm">
             {Object.entries(details?.specifications || { 'Sunlight Suitability': sunlightSuitability }).map(([label, value]) => (
               <div key={label} className="py-2.5">

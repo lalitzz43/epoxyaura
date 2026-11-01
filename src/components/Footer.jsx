@@ -1,6 +1,5 @@
 import { Link } from 'react-router'
 import { BRAND_EMAIL, navigation } from '../data/siteData'
-import Logo from './Logo'
 import ResponsiveBanner from './ResponsiveBanner'
 
 export default function Footer() {
@@ -8,7 +7,7 @@ export default function Footer() {
     <>
       <ResponsiveBanner
         src="/images/footer2.jpeg"
-        alt="About EpoxyAura: More Than Just Tables. It's a Feeling. Handcrafted with love."
+        alt="About EPOXYAURA: More Than Just Tables. It's a Feeling. Handcrafted with love."
         width="3072"
         height="600"
       />
@@ -25,12 +24,14 @@ export default function Footer() {
       <footer className="border-t border-[#b99851]/60 bg-[#0b100d] text-[#f2ead4]" style={{ backgroundImage: 'radial-gradient(ellipse at top left, #26332566, transparent 65%)' }}>
         <div className="container-shell grid gap-10 py-14 md:grid-cols-2 lg:grid-cols-[1.5fr_0.8fr_1fr_1fr] lg:gap-8 lg:py-20">
           <div>
-            <div
-              className="inline-flex"
-              style={{ backgroundImage: 'radial-gradient(ellipse 65% 25% at 50% 77%, #f8f5ec 40%, #f8f5ecbb 65%, transparent 100%)' }}
-            >
-              <Logo />
-            </div>
+            <Link to="/" className="relative block w-full max-w-[250px] overflow-hidden">
+              <img
+                src="/images/footerlogo.png"
+                alt="EPOXYAURA - Handcrafted Resin Art"
+                className="relative -left-[8%] block h-auto !w-[116%] !max-w-none object-contain mix-blend-screen"
+                loading="lazy"
+              />
+            </Link>
             <p className="mt-6 font-display text-2xl italic text-[#e5c77e]">Where Resin Meets Elegance.</p>
             <p className="mt-4 max-w-xs text-sm leading-7 text-white/55">Handcrafted resin tables inspired by nature, made to bring art and character into your everyday spaces.</p>
           </div>
@@ -54,7 +55,7 @@ export default function Footer() {
         </div>
         <div className="border-t border-[#b99851]/40">
           <div className="container-shell flex flex-wrap items-center justify-between gap-3 py-6 text-xs text-white/45">
-            <p>&copy; {new Date().getFullYear()} EpoxyAura. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} EPOXYAURA. All rights reserved.</p>
             <p className="tracking-wider text-[#c7a45e]/80">Inspired by nature. Crafted with love.</p>
           </div>
         </div>

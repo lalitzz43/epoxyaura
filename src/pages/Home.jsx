@@ -3,7 +3,6 @@ import { images, products } from '../data/siteData'
 import SectionHeading from '../components/SectionHeading'
 import ProductCard from '../components/ProductCard'
 import ProductGrid from '../components/ProductGrid'
-import AboutSection from '../components/AboutSection'
 import FeatureIcon from '../components/FeatureIcon'
 import ResponsiveBanner from '../components/ResponsiveBanner'
 
@@ -22,7 +21,6 @@ export default function Home({ onSelect }) {
         <Link to="/collection" className="block focus-visible:outline-2 focus-visible:outline-gold focus-visible:-outline-offset-4">
           <ResponsiveBanner
             src={images.hero}
-            className="block h-[clamp(200px,45vw,300px)] w-full object-fill md:h-auto"
             alt="EPOXYAURA ? Artistry in Every Curve. Handcrafted resin tables and art pieces. Explore the Forest River Table collection."
             eager
             width={2560}
@@ -43,36 +41,19 @@ export default function Home({ onSelect }) {
         </div>
       </section>
 
-      <section aria-labelledby="signature-tables-title" className="container-shell py-16 md:py-24">
-        <div className="relative isolate mb-10 overflow-hidden rounded-[2rem] border border-gold/20 bg-[#f1ecdf] px-6 py-10 sm:px-10 md:mb-12 md:px-12 md:py-14">
-          <div aria-hidden="true" className="pointer-events-none absolute -right-16 -top-36 -z-10 size-[30rem] rounded-full border border-gold/15 bg-[radial-gradient(circle,rgba(190,149,73,0.15),transparent_70%)]" />
-          <div aria-hidden="true" className="pointer-events-none absolute -right-4 -top-24 -z-10 size-[23rem] rounded-full border border-gold/10" />
-          <div className="mb-7 flex items-center gap-3">
-            <span aria-hidden="true" className="h-px w-8 bg-gold" />
-            <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-gold sm:text-xs">Our Collection</p>
-          </div>
-          <div className="grid gap-7 lg:grid-cols-[1.4fr_1fr] lg:items-end lg:gap-12">
-            <h2 id="signature-tables-title" className="font-display text-[clamp(2.75rem,5.6vw,5.5rem)] leading-[0.98] tracking-[-0.035em] text-forest">
-              Signature<br />
-              <span className="font-normal italic text-gold">Resin Tables</span><span className="text-gold">.</span>
-            </h2>
-            <div className="max-w-sm lg:pb-1">
-              <p className="text-sm leading-7 text-ink/70 sm:text-base">Explore expressive designs, each with its own story, colours and character.</p>
-              <Link to="/collection" className="group mt-6 inline-flex items-center gap-4 border-b border-gold/40 pb-2 text-sm font-medium text-gold transition-colors hover:border-gold hover:text-forest">
-                Explore the collection
-                <span aria-hidden="true" className="transition-transform group-hover:translate-x-1 motion-reduce:transform-none">&rarr;</span>
-              </Link>
-            </div>
-          </div>
-          <div className="mt-9 flex flex-wrap items-center justify-between gap-3 border-t border-gold/20 pt-5 text-[10px] uppercase tracking-[0.18em] text-gold sm:text-xs">
-            <span>Nature inspired. Artfully crafted.</span>
-            <span className="flex items-center gap-2"><span aria-hidden="true" className="size-1.5 rounded-full bg-gold" />{String(products.length).padStart(2, '0')} signature designs</span>
-          </div>
+      <section aria-labelledby="signature-tables-title" className="container-shell py-7 md:py-12">
+        <div className="mb-6 text-center md:mb-9">
+          <p className="mb-2 text-[9px] font-semibold uppercase tracking-[0.22em] text-gold md:text-[11px]">
+            Our Collection
+          </p>
+          <h2 id="signature-tables-title" className="font-display text-[clamp(1.65rem,6.5vw,3.5rem)] font-medium leading-tight tracking-[-0.025em] text-ink">
+            Signature Resin Tables
+          </h2>
+          <p className="mx-auto mt-2 max-w-2xl text-[11px] leading-5 text-ink/80 md:mt-3 md:text-sm">Explore our handcrafted resin tables, each with its own story, colours and character.</p>
         </div>
         <ProductGrid items={products} onSelect={onSelect} />
       </section>
 
-      <AboutSection />
 
       <section className="container-shell py-16">
         <SectionHeading
