@@ -1,5 +1,4 @@
-export const BRAND_EMAIL = 'hello@example.com'
-// Launch se pehle upar apna real business email lagana.
+export const BRAND_EMAIL = 'epoxyaura05@gmail.com'
 
 export const images = {
   hero: '/images/bannerone.jpeg',
@@ -34,7 +33,7 @@ export const products = [
     id: 4,
     name: 'Royal Blossom',
     category: 'Floral',
-    colors: 'Resin - Real Dried Flowers',
+    colors: 'White - Real Dried Flowers - Gold Flakes',
     price: 10000,
     image: '/images/photosix.jpeg',
     description:

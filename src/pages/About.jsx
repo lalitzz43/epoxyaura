@@ -53,9 +53,9 @@ export default function About() {
         <div className="lg:sticky lg:top-40" data-about-reveal>
           <div className="relative overflow-hidden rounded-3xl bg-paper">
             <img src="/images/photoone.jpeg" alt="Forest River handcrafted resin table with natural wood and blue-green resin" loading="lazy" className="aspect-[4/5] max-h-[560px] w-full object-cover" />
-            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#10251ef2] to-transparent px-7 pb-8 pt-20 text-cream">
-              <p className="text-[10px] uppercase tracking-[0.25em] text-[#e5c77e]">Art in the everyday</p>
-              <p className="mt-3 font-display text-3xl italic">A little nature.<br />A lot of character.</p>
+            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#081a14] via-[#081a14]/90 to-transparent px-6 pb-7 pt-16 text-white md:px-7 md:pb-8 md:pt-20">
+              <p className="text-xs font-bold uppercase leading-5 tracking-[0.18em] text-[#ffe2a0] [text-shadow:0_2px_4px_rgba(0,0,0,0.9)]">Art in the everyday</p>
+              <p className="mt-3 font-display text-3xl font-bold leading-tight [text-shadow:0_2px_6px_rgba(0,0,0,0.9)] md:italic">A little nature.<br />A lot of character.</p>
             </div>
           </div>
         </div>
@@ -93,7 +93,7 @@ export default function About() {
           ].map(([number, title, text]) => <div key={number} data-about-reveal className="rounded-2xl border border-gold/20 bg-white/40 p-7 transition-colors hover:bg-paper/60"><p className="font-display text-4xl text-gold/65">{number}</p><h3 className="mt-4 font-display text-3xl text-forest">{title}</h3><p className="mt-3 text-sm leading-7 text-ink/75">{text}</p></div>)}
         </div>
         <div className="mt-14 border-t border-gold/20 pt-10 text-center" data-about-reveal>
-          <h2 className="font-display text-3xl font-bold italic leading-tight text-gold md:text-4xl">EPOXYAURA – Where Resin Meets Elegance.</h2>
+          <h2 className="font-display text-3xl font-bold italic leading-tight text-gold md:text-4xl"><span className="not-italic">EPOXYAURA</span> – Where Resin Meets Elegance.</h2>
           <p className="mt-4 text-sm leading-7 text-ink/75">Every creation tells a story. Every detail reflects an art.</p>
           <Link to="/collection" className="button-gold mt-7">Discover our creations <span aria-hidden="true">&rarr;</span></Link>
         </div>

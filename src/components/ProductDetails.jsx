@@ -1,9 +1,21 @@
 import { useEffect } from 'react'
-import { BRAND_EMAIL, formatPrice } from '../data/siteData'
+import { formatPrice } from '../data/siteData'
 import { getProductContent, sunlightSuitability } from '../data/productContent'
 
 export default function ProductDetails({ product, onClose }) {
   const details = getProductContent(product)
+  const enquiryMessage = [
+    "Hello EPOXYAURA, I'm interested in this piece:",
+    '',
+    `Product: ${details?.title || product.name}`,
+    `Collection: ${product.category}`,
+    product.colors && `Colours / Details: ${product.colors}`,
+    `Price: ${formatPrice(product.price)}`,
+    '',
+    ...Object.entries(details?.specifications || {}).map(([label, value]) => `${label}: ${value}`),
+    '',
+    'Please share availability and ordering details.',
+  ].filter((line) => line !== undefined && line !== false).join('\n')
   useEffect(() => {
     const previousOverflow = document.body.style.overflow
     document.body.style.overflow = 'hidden'
@@ -44,7 +56,7 @@ export default function ProductDetails({ product, onClose }) {
         </div>
 
         <div className="min-h-0 min-w-0 p-6 md:overflow-y-auto md:p-8 md:pt-16">
-          {product.name !== 'Royal Blossom' && <p className="section-label">{product.category} Collection</p>}
+          <p className="section-label">{product.category} Collection</p>
           <h2 id="product-title" className="mt-4 font-display text-4xl">
             {details?.title || product.name}
           </h2>
@@ -54,7 +66,7 @@ export default function ProductDetails({ product, onClose }) {
           </p>
           <div className="mt-5 space-y-4 text-sm leading-7 text-ink/70">
             {(details?.paragraphs || [product.description]).map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
-            <p className="font-display text-lg italic text-gold">{details?.tagline || 'EPOXYAURA – Where Resin Meets Elegance.'}</p>
+            <p className="text-lg font-normal not-italic text-gold">EPOXYAURA</p>
           </div>
           <h3 className="mt-7 font-display text-2xl">{details?.specificationHeading || 'Product Specifications'}</h3>
           <dl className="mt-3 divide-y divide-gold/15 text-sm">
@@ -68,9 +80,9 @@ export default function ProductDetails({ product, onClose }) {
           </dl>
 
           <a
-            href={`mailto:${BRAND_EMAIL}?subject=${encodeURIComponent(
-              `Enquiry about ${product.name}`,
-            )}`}
+            href={`https://wa.me/919267939233?text=${encodeURIComponent(enquiryMessage)}`}
+            target="_blank"
+            rel="noopener noreferrer"
             className="button-gold mt-7"
           >
             Enquire About This Piece →
