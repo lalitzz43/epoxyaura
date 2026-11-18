@@ -66,7 +66,7 @@ export default function ProductDetails({ product, onClose }) {
           </p>
           <div className="mt-5 space-y-4 text-sm leading-7 text-ink/70">
             {(details?.paragraphs || [product.description]).map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
-            <p className="text-lg font-normal not-italic text-gold">EPOXYAURA</p>
+            <p className="font-display text-lg font-normal italic text-gold"><span className="not-italic">EPOXYAURA</span> – Where Resin Meets Elegance.</p>
           </div>
           <h3 className="mt-7 font-display text-2xl">{details?.specificationHeading || 'Product Specifications'}</h3>
           <dl className="mt-3 divide-y divide-gold/15 text-sm">

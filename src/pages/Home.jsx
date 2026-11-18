@@ -25,6 +25,7 @@ export default function Home({ onSelect }) {
             eager
             width={2560}
             height={853}
+            className="block h-[clamp(210px,42vw,320px)] w-full object-cover object-left md:h-auto"
           />
         </Link>
       </section>
